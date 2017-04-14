@@ -1,6 +1,5 @@
 """
     Author: Adam
-    Email : 511533552@qq.com
     Blog  : www.adamyt.com
 """
 import requests, re, time, os, urllib.request, math
