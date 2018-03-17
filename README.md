@@ -8,4 +8,5 @@
 目前还有一些未处理的BUG或者一些尚未发现的BUG，但考虑到为了写这程序我昨天一天都没学雅思有点慌，先缓缓，毕竟只有一个月就要考了。
 
 下面这个说明很老了，很多没说，也说得不好，不过暂时也不想更博orz
-详细说明见http://www.adamyt.com/blog/20170323-getMOOCpdf/
+
+~~详细~~说明见http://www.adamyt.com/blog/20170323-getMOOCpdf/
