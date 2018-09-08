@@ -250,7 +250,7 @@ def parse_info(res_text):
         content = res_text.encode('utf-8').decode('unicode_escape')
         content = re.sub(r'({##)|(##\})', '', content)      # 高亮的关键词会被井号括起来 应该可以通过c0-e3参数控制
         courses_list = re.findall(re_info, content)
-        page_info = re.findall(re_page_info, content[-500:])
+        page_info = re.findall(re_page_info, content)
         if not courses_list or page_info is None:
             raise MOOCException('未搜索到任何记录')
         page_info = page_info[0]
@@ -354,6 +354,7 @@ def select_course(number, tid=0):
                 path = input('输入保存路径：(默认当前目录-{})\n'.format(os.getcwd()))
                 try:
                     if not path:
+                        path = os.getcwd()
                         break
                     if not os.path.isdir(path):
                         os.mkdir(path)
